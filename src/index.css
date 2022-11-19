@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@400;500;600;700&display=swap");
 body {
-    /* min-height: 500vh; */
+    min-height: 100vh;
     background: #fdfbfa;
     color: #111112;
     font-size: 16px;
@@ -41,4 +41,27 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.nav-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 3px;
+    border-radius: 9999px;
+    background: #1ac84b;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: distent 0.2s forwards;
+}
+
+@keyframes distent {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
 }

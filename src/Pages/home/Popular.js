@@ -4,6 +4,7 @@ import food2 from "../../assets/images/Card/food2.png";
 import food3 from "../../assets/images/Card/food3.png";
 import food4 from "../../assets/images/Card/food4.png";
 import CardBlock from "../../components/Cards/CardBlock";
+import { createTitle } from "../../components/content/Title";
 const datas = [
     {
         img: food1,
@@ -36,7 +37,15 @@ const datas = [
 ];
 
 const Popular = () => {
-    return <CardBlock datas={datas} className="container"></CardBlock>;
+    const title = createTitle`The most popular diets`;
+    return (
+        <CardBlock
+            datas={datas}
+            className="container"
+            title={title}
+            titleClassName="mb-[66px]"
+        ></CardBlock>
+    );
 };
 
 export default Popular;

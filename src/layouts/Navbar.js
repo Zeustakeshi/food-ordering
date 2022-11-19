@@ -47,8 +47,8 @@ const NavbarItem = ({ data }) => {
         <li>
             <NavLink
                 className={({ isActive }) =>
-                    `p-4 text-sm font-normal uppercase ${
-                        isActive ? "text-blue-500" : "text-black"
+                    `relative p-4 pb-2 text-sm font-medium uppercase ${
+                        isActive ? "nav-active" : "text-black"
                     }`
                 }
                 to={data.to}
