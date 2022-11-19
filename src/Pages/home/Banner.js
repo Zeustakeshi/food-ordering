@@ -14,7 +14,7 @@ import SubtractFood4 from "../../assets/images/banner/Subtract_food4.png";
 
 const Banner = () => {
     return (
-        <div className="pt-8 relative">
+        <div className="pt-8 relative mb-[300px]">
             <div className="absolute top-20 left-0">
                 <div className="absolute w-[250px] translate-x-3 -translate-y-20">
                     <Image src={food1} />

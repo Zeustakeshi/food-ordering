@@ -1,11 +1,14 @@
 import React from "react";
 
 const Button = ({ type, children, className = "", ...props }) => {
-    let nodeclass = "hover:opacity-80 transition-all";
+    let nodeclass = "hover:opacity-80 transition-all px-[25px] py-[12px] ";
     switch (type) {
         case "black":
+            nodeclass += " bg-gray rounded-[20px] text-gray5 font-bold text-sm";
+            break;
+        case "green":
             nodeclass +=
-                " bg-gray rounded-[20px] text-gray5 font-bold text-sm px-[25px] py-[12px] ";
+                " bg-primary-green rounded-[10px] text-gray5 font-bold text-sm ";
             break;
 
         default:

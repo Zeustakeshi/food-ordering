@@ -36,7 +36,7 @@ const headerNavbar = [
 
 const Header = () => {
     return (
-        <div className="flex justify-between items-center px-3">
+        <div className="flex justify-between items-center px-4">
             <Logo></Logo>
             <ul className="flex justify-between items-center ">
                 {headerNavbar.map((item, index) => {
