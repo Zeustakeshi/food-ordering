@@ -6,6 +6,7 @@ const BlockContent = ({
     titleClassName = "",
     highlightsClassName = "",
     className = "",
+    tagsHeader = [],
     children,
 }) => {
     return (
@@ -15,6 +16,7 @@ const BlockContent = ({
                 content={title}
                 highlightsClassName={highlightsClassName}
             ></Title>
+            {tagsHeader}
             {children}
         </div>
     );
