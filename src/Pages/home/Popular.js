@@ -36,7 +36,7 @@ const datas = [
 ];
 
 const Popular = () => {
-    return <CardBlock datas={datas}></CardBlock>;
+    return <CardBlock datas={datas} className="container"></CardBlock>;
 };
 
 export default Popular;

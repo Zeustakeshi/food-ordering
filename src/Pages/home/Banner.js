@@ -16,34 +16,34 @@ const Banner = () => {
     return (
         <div className="pt-8 relative mb-[300px]">
             <div className="absolute top-20 left-0">
-                <div className="absolute w-[250px] translate-x-3 -translate-y-20">
+                <div className="absolute w-[280px] translate-x-3 -translate-y-20">
                     <Image src={food1} />
                 </div>
-                <div className="max-w-[180px]">
+                <div className="w-[222px]">
                     <Image src={SubtractFood1} />
                 </div>
             </div>
             <div className="absolute left-0 -bottom-20">
-                <div className="absolute w-[150px] translate-x-0 -translate-y-1">
+                <div className="absolute w-[180px] translate-x-0 -translate-y-[0px]">
                     <Image src={food2} />
                 </div>
-                <div className="max-w-[180px]">
+                <div className="w-[230px]">
                     <Image src={SubtractFood2} />
                 </div>
             </div>
             <div className="absolute top-20 right-0">
-                <div className="absolute w-[130px] translate-x-0 -translate-y-1">
+                <div className="absolute w-[243px] -translate-x-[64px] -translate-y-[50px]">
                     <Image src={food3} />
                 </div>
-                <div className="w-[130px]">
+                <div className="w-[180px]">
                     <Image src={SubtractFood3} />
                 </div>
             </div>
             <div className="absolute right-0 -bottom-20">
-                <div className="absolute w-[260px] -translate-x-[135px] translate-y-[84px]">
+                <div className="absolute w-[350px] -translate-x-[188px] translate-y-[84px]">
                     <Image src={food4} />
                 </div>
-                <div className="max-w-[190px]">
+                <div className="max-w-[220px]">
                     <Image src={SubtractFood4} />
                 </div>
             </div>

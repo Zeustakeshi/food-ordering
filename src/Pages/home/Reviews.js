@@ -63,7 +63,7 @@ const Reviews = () => {
     )} lives`;
 
     return (
-        <div className="px-4 flex justify-between items-start gap-[148px] mb-[200px]">
+        <div className="container px-4 flex justify-between items-start gap-[148px] mb-[200px]">
             <BlockContent
                 title={title}
                 className=""

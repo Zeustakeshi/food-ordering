@@ -10,6 +10,7 @@ export const createTitle = ([first, ...strings], ...values) => {
 };
 
 const Title = ({ highlightsClassName, content, className }) => {
+    if (!content) return null;
     const titleHtml = content.replaceAll(
         `className="highlights"`,
         `className=" inline-block mt-1 ${highlightsClassName}"`

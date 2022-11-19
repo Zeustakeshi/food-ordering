@@ -3,12 +3,18 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@400;500;600;700&display=swap");
 body {
-    min-height: 500vh;
-    max-width: 1440px;
-    margin: 0 auto;
+    /* min-height: 500vh; */
     background: #fdfbfa;
     color: #111112;
     font-size: 16px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .border-tl-radius {
