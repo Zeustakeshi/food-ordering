@@ -1,1 +1,1 @@
-export const baseUrl = "/food-ordering";
+export const baseUrl = "/";
