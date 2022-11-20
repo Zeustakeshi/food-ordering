@@ -8,6 +8,7 @@ const CaloriteCaculator = lazy(() =>
     import("./Pages/caloriteCaculator/CaloriteCaculator")
 );
 const Menu = lazy(() => import("./Pages/menu/Menu"));
+const NotFound = lazy(() => import("./Pages/notfound/NotFound"));
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                             element={<CaloriteCaculator />}
                         ></Route>
                         <Route path="/menu" element={<Menu />}></Route>
+                        <Route path="*" element={<NotFound />}></Route>
                     </Routes>
                 </Suspense>
             </div>

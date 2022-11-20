@@ -13,8 +13,8 @@ const Card = ({ data }) => {
 
     return (
         <div className="rounded-[48px] min-h-[500px]">
-            <div className="rounded-[inherit] mb-4">
-                <Image src={img} />
+            <div className="rounded-[inherit] mb-4 ">
+                <Image src={img} className="max-h-[230px]" />
             </div>
             <div className="flex flex-col justify-between">
                 <div className="font-bold mb-3">{title}</div>

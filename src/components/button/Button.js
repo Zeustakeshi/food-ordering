@@ -1,10 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Button = ({
     type,
     children,
     className = "",
     disabled = false,
+    to,
     ...props
 }) => {
     let nodeclass = `hover:opacity-80 transition-all px-[25px] py-[12px] select-none ${
@@ -28,6 +30,18 @@ const Button = ({
     }
 
     nodeclass += className;
+    if (to) {
+        return (
+            <NavLink
+                disabled={disabled}
+                {...props}
+                className={nodeclass}
+                to={to}
+            >
+                {children}
+            </NavLink>
+        );
+    }
     return (
         <button disabled={disabled} {...props} className={nodeclass}>
             {children}
