@@ -15,7 +15,7 @@ function App() {
             <div className="App">
                 <Suspense fallback={<></>}>
                     <Routes>
-                        <Route path="/" element={<Home />}></Route>
+                        <Route path="/food-ordering" element={<Home />}></Route>
                         <Route path="/diets" element={<Diets />}></Route>
                         <Route
                             path="/calorie-calculator"
