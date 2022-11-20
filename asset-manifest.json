@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food-ordering/static/css/main.d47e6ddc.css",
-    "main.js": "/food-ordering/static/js/main.91648644.js",
+    "main.js": "/food-ordering/static/js/main.9aa4419b.js",
     "static/css/286.9b1f97d0.chunk.css": "/food-ordering/static/css/286.9b1f97d0.chunk.css",
     "static/js/286.cbab28d8.chunk.js": "/food-ordering/static/js/286.cbab28d8.chunk.js",
     "static/css/449.9b1f97d0.chunk.css": "/food-ordering/static/css/449.9b1f97d0.chunk.css",
@@ -30,7 +30,7 @@
     "static/media/bi_phone.svg": "/food-ordering/static/media/bi_phone.4a769307711fdd1714adff7c089c5ef5.svg",
     "index.html": "/food-ordering/index.html",
     "main.d47e6ddc.css.map": "/food-ordering/static/css/main.d47e6ddc.css.map",
-    "main.91648644.js.map": "/food-ordering/static/js/main.91648644.js.map",
+    "main.9aa4419b.js.map": "/food-ordering/static/js/main.9aa4419b.js.map",
     "286.9b1f97d0.chunk.css.map": "/food-ordering/static/css/286.9b1f97d0.chunk.css.map",
     "286.cbab28d8.chunk.js.map": "/food-ordering/static/js/286.cbab28d8.chunk.js.map",
     "449.9b1f97d0.chunk.css.map": "/food-ordering/static/css/449.9b1f97d0.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.d47e6ddc.css",
-    "static/js/main.91648644.js"
+    "static/js/main.9aa4419b.js"
   ]
 }
