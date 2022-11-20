@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useApp } from "../../context/AppProvider";
 import Button from "../button/Button";
 import Image from "../image/Image";
 
 const Card = ({ data }) => {
     const { img, title, kcal, desc, price } = data;
+    const { setCarts, carts } = useApp();
+    const disabled =
+        carts.filter(
+            (item) => JSON.stringify(item.info) === JSON.stringify(data)
+        ).length > 0;
+
     return (
         <div className="rounded-[48px] min-h-[500px]">
             <div className="rounded-[inherit] mb-4">
@@ -39,7 +46,18 @@ const Card = ({ data }) => {
                         <span> /day</span>
                     </div>
                     <div>
-                        <Button type="green">Choose</Button>
+                        <Button
+                            onClick={() => {
+                                setCarts((prev) => [
+                                    ...prev,
+                                    { info: data, count: 1 },
+                                ]);
+                            }}
+                            disabled={disabled}
+                            type="green"
+                        >
+                            {disabled ? "Selected" : "Choose"}
+                        </Button>
                     </div>
                 </div>
             </div>

@@ -4,9 +4,9 @@ import Header from "./Header";
 
 const MainLayout = ({ children }) => {
     return (
-        <div className="bg-[#FDFBFA] ">
+        <div className="relative bg-[#FDFBFA] ">
             <Header></Header>
-            <div className="mt-[30px]">{children}</div>
+            <div className="mt-[110px]">{children}</div>
             <Footer></Footer>
         </div>
     );

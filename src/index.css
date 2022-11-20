@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@400;500;600;700&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background: #fdfbfa;
@@ -44,12 +48,13 @@ body {
 }
 
 .nav-active::after {
+    --width: 30%;
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 20%;
+    width: var(--width);
     height: 3px;
     border-radius: 9999px;
     background: #1ac84b;
@@ -62,6 +67,6 @@ body {
         width: 0%;
     }
     to {
-        width: 20%;
+        width: 30%;
     }
 }

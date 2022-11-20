@@ -114,7 +114,7 @@ const ReviewContent = ({ data }) => {
             <div className="flex justify-start items-center gap-1 mb-2">
                 {new Array(start).fill(0).map((item, index) => {
                     return (
-                        <span>
+                        <span key={index}>
                             <svg
                                 width="18"
                                 height="17"

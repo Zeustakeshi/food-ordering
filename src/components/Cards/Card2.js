@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useApp } from "../../context/AppProvider";
 import Button from "../button/Button";
 import Image from "../image/Image";
 
 const Card2 = ({ data }) => {
+    const { setCarts, carts } = useApp();
+
     const { img, title, kcal, desc, price, tags } = data;
+    const disabled =
+        carts.filter(
+            (item) => JSON.stringify(item.info) === JSON.stringify(data)
+        ).length > 0;
     return (
         <div className="flex flex-col justify-start items-center">
             <div className="rounded-[48px] mb-3">
@@ -27,7 +34,7 @@ const Card2 = ({ data }) => {
                         return (
                             <span
                                 key={index}
-                                className="bg-gray4 p-2 rounded-xl"
+                                className="bg-gray4 p-2 rounded-xl text-sm"
                             >
                                 {tag}
                             </span>
@@ -41,9 +48,21 @@ const Card2 = ({ data }) => {
                             $
                         </span>
                     </div>
-                    <Button type="green" className="px-3 py-2 min-w-[150px]">
-                        Choose
-                    </Button>
+                    {
+                        <Button
+                            onClick={() => {
+                                setCarts((prev) => [
+                                    ...prev,
+                                    { info: data, count: 1 },
+                                ]);
+                            }}
+                            disabled={disabled}
+                            type="green"
+                            className={`px-3 py-2 min-w-[150px] `}
+                        >
+                            {disabled ? "Selected" : "Choose"}
+                        </Button>
+                    }
                 </div>
             </div>
         </div>

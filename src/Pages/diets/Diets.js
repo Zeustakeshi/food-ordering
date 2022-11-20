@@ -22,7 +22,7 @@ const Diets = () => {
                 </ContentProvider>
                 <Line direction="all" height={150}>
                     <div className="flex flex-col justify-center items-center bg-gray4 rounded-[78px] py-[65px]">
-                        <Title content={title2} className="mb-3"></Title>
+                        <Title content={title2} className="mb-4"></Title>
                         <p className="font-normal text-sm text-center max-w-[438px] mb-11">
                             We'll try to help you! Take advantage of the free
                             advice of a nutritionist and choose the perfect kit

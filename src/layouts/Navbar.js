@@ -15,16 +15,16 @@ const headerNavbar = [
         to: "/menu",
     },
     {
+        label: "Cart",
+        to: "/cart",
+    },
+    {
         label: "Delivery",
         to: "/delivery",
     },
     {
         label: "about us",
         to: "/about-us",
-    },
-    {
-        label: "Blog",
-        to: "/blog",
     },
     {
         label: "FAQ",
