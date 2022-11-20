@@ -12,12 +12,11 @@ const Button = ({
     }`;
     switch (type) {
         case "black":
-            nodeclass +=
-                " !bg-gray rounded-[20px] text-gray5 font-bold text-sm";
+            nodeclass += " bg-gray rounded-[20px] text-gray5 font-bold text-sm";
             break;
         case "green":
             nodeclass +=
-                " !bg-primary-green rounded-[10px] text-gray5 font-bold text-sm ";
+                " bg-primary-green rounded-[10px] text-gray5 font-bold text-sm ";
             break;
         case "orange":
             nodeclass +=
