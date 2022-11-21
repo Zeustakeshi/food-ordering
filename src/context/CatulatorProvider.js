@@ -4,6 +4,7 @@ const CaculatorContext = createContext();
 
 const CaculatorProvider = ({ ...props }) => {
     const [result, setResult] = useState(0);
+    console.log(result);
     const values = { result, setResult };
     return (
         <CaculatorContext.Provider

@@ -1,8 +1,8 @@
 import React from "react";
 import { CaculatorProvider } from "../../context/CatulatorProvider";
-import Result from "./Result";
+import ResultBMR from "./BMR/ResultBMR";
 
-const CatulatorTemplate = ({ children, title, desc }) => {
+const CatulatorTemplate = ({ children, title, desc, result }) => {
     return (
         <CaculatorProvider>
             <div className="flex justify-between items-start w-full  text-base">
@@ -26,7 +26,7 @@ const CatulatorTemplate = ({ children, title, desc }) => {
 
                     {children || <div className="font-medium">coming soon</div>}
                 </div>
-                {children && <Result></Result>}
+                {children && result}
             </div>
         </CaculatorProvider>
     );

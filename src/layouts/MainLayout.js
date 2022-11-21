@@ -1,4 +1,5 @@
 import React from "react";
+import MoveToTopButton from "../components/moveToTopButton/MoveToTopButton";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -8,6 +9,7 @@ const MainLayout = ({ children }) => {
             <Header></Header>
             <div className="mt-[110px]">{children}</div>
             <Footer></Footer>
+            <MoveToTopButton />
         </div>
     );
 };

@@ -4,7 +4,6 @@ const AppContext = createContext();
 
 const AppProvider = ({ ...props }) => {
     const [carts, setCarts] = useState([]);
-    console.log(carts);
     const values = { carts, setCarts };
     return (
         <AppContext.Provider value={values} {...props}></AppContext.Provider>

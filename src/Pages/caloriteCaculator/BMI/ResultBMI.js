@@ -1,17 +1,17 @@
 import React from "react";
-import { useCaculator } from "../../context/CatulatorProvider";
-import "./table.css";
+import { useCaculator } from "../../../context/CatulatorProvider";
+import "../table.css";
 
-const Result = () => {
+const ResultBMI = () => {
     const { result } = useCaculator();
     return (
         <div className="text-base">
             <p className="font-semibold mb-5">
-                BMR ={" "}
+                BMI ={" "}
                 <span className="text-lg font-semibold text-primary-green">
                     {!result ? "1.287" : result}
                 </span>{" "}
-                Calories/day
+                kg/m2
             </p>
             <ActivityTable result={result}></ActivityTable>
         </div>
@@ -21,27 +21,27 @@ const Result = () => {
 const activityItems = [
     {
         label: "Sedentary: little or no exercise",
-        x: 1.1997157071783937,
+        value: "",
     },
     {
         label: "Exercise 1-3 times/week",
-        x: 1.3745557924662402,
+        value: "",
     },
     {
         label: "Exercise 4-5 times/week",
-        x: 1.464818763326226,
+        value: "",
     },
     {
         label: "Daily exercise or intense exercise 3-4 times/week",
-        x: 1.5493958777540868,
+        value: "",
     },
     {
         label: "Intense exercise 6-7 times/week",
-        x: 1.7242359630419333,
+        value: "",
     },
     {
         label: "Very intense exercise daily, or physical job",
-        x: 1.8990760483297797,
+        value: "",
     },
 ];
 
@@ -49,8 +49,8 @@ const ActivityTable = ({ result }) => {
     return (
         <table>
             <tr>
-                <th>Activity Level</th>
-                <th>Calorie</th>
+                <th>Category</th>
+                <th>BMI range - kg/m2</th>
             </tr>
             {activityItems.map((item, index) => {
                 return (
@@ -64,4 +64,4 @@ const ActivityTable = ({ result }) => {
     );
 };
 
-export default Result;
+export default ResultBMI;
